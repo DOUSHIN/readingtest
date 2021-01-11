@@ -15,6 +15,6 @@ client = SlackNotify::Client.new(
 #client.notify("一発目")
 #puts "スラックメッセージ送信済み"
 
-every(5.seconds,'gogogo') do
-  client.notify("2発目")
+every(3.minutes,'gogogo') do
+  client.notify("確認メッセージ")
 end
